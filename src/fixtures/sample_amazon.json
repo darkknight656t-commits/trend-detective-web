@@ -1,0 +1,89 @@
+{
+  "location": { "lat": -3.10, "lon": -60.00 },
+  "grid": {
+    "approx_size_km": "50-60",
+    "note": "MERRA-2 grid cell average, not a point measurement",
+    "cell_lat": -3.00,
+    "cell_lon": -60.00
+  },
+  "cached": true,
+  "fetched_at": "2026-11-12T08:30:00Z",
+  "years": [
+    1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990,
+    1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000,
+    2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010,
+    2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020,
+    2021, 2022, 2023, 2024
+  ],
+  "temperature": {
+    "unit": "°C",
+    "values": [
+      26.80, 26.95, 26.75, 26.88, 27.02, 26.90, 27.25, 27.15, 26.85, 27.10,
+      27.00, 26.78, 27.20, 27.15, 27.30, 27.22, 27.18, 27.50, 27.45, 27.35,
+      27.48, 27.65, 27.40, 27.55, 27.30, 27.70, 27.58, 27.50, 27.75, 27.70,
+      27.60, 27.65, 27.52, 27.60, 27.72, 27.85, 27.80, 27.75, 27.70, 27.82,
+      27.90, 27.85, 27.78, 28.05
+    ],
+    "n_years": 44,
+    "first_year": 1981,
+    "last_year": 2024,
+    "trend_direction": "increasing",
+    "p_raw": 0.0008,
+    "p_adj": 0.0035,
+    "sen_slope_per_year": 0.024,
+    "sen_slope_per_decade": 0.24,
+    "intercept": 26.85,
+    "confidence": "Strong",
+    "pettitt_year": 2001,
+    "pettitt_p_raw": 0.015,
+    "pettitt_p_adj": 0.038,
+    "change_point_significant": true,
+    "mean_before": 27.05,
+    "mean_after": 27.68
+  },
+  "precipitation": {
+    "unit": "mm/day",
+    "values": [
+      5.60, 5.75, 5.85, 5.40, 5.65, 5.50, 5.80, 5.70, 5.35, 5.95,
+      5.55, 6.05, 5.45, 5.65, 5.75, 5.58, 6.10, 5.70, 5.42, 5.88,
+      5.30, 5.20, 5.65, 5.55, 5.72, 5.48, 5.82, 5.68, 5.60, 6.15,
+      5.80, 5.62, 6.00, 5.85, 6.08, 5.75, 5.55, 5.70, 5.78, 5.85,
+      5.65, 5.98, 5.72, 5.80
+    ],
+    "n_years": 44,
+    "first_year": 1981,
+    "last_year": 2024,
+    "trend_direction": "no trend",
+    "p_raw": 0.48,
+    "p_adj": 0.72,
+    "sen_slope_per_year": 0.002,
+    "sen_slope_per_decade": 0.02,
+    "intercept": 5.65,
+    "confidence": "No significant trend",
+    "pettitt_year": null,
+    "pettitt_p_raw": null,
+    "pettitt_p_adj": null,
+    "change_point_significant": false,
+    "mean_before": null,
+    "mean_after": null
+  },
+  "correlation": {
+    "spearman_raw": -0.15,
+    "p_raw": 0.33,
+    "spearman_detrended": -0.18,
+    "p_detrended_raw": 0.24,
+    "p_detrended_adj": 0.35
+  },
+  "summary": [
+    "Annual mean temperatures across the Amazon basin (-3.10°S, 60.00°W) increased at an estimated rate of +0.24 °C per decade from 1981 to 2024 (strong confidence, adjusted p = 0.004).",
+    "A shift in average annual temperature occurred around 2001 (mean before: 27.05 °C, mean after: 27.68 °C).",
+    "Annual mean precipitation shows tropical interannual variability with no statistically significant overall trend (adjusted p = 0.720).",
+    "Detrended correlation between temperature and precipitation is negligible and not statistically significant (spearman r = -0.18, adjusted p = 0.350)."
+  ],
+  "meta": {
+    "alpha": 0.05,
+    "fdr": "Benjamini-Hochberg over 5 tests",
+    "trend_test": "Mann-Kendall, Hamed-Rao modification",
+    "source": "NASA POWER (MERRA-2)"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Trend Detective - NASA Earth System Climate Trends",
+  "description": "Scientific exploration of 45+ years of NASA POWER (MERRA-2) climate data, significance-tested trend analyses, change points, and temperature-precipitation dynamics.",
+  "requestFramePermissions": ["geolocation"]
+}

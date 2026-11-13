@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --color-paper: #FAF8F4;
+    --color-paper-muted: #F2EEE6;
+    --color-ink: #1A1A1A;
+    --color-ink-muted: #52504A;
+    --color-rule: #E2DDD3;
+    --color-temp: #C8472B;
+    --color-precip: #2F6C9F;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    overflow-x: hidden;
+  }
+
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-display {
+    font-family: var(--font-serif);
+  }
+
+  /* Accessible tabular figures for all data statistics */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Clear keyboard focus rings for WCAG AA accessibility */
+  :focus-visible {
+    outline: 2px solid #1A1A1A;
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Keep MapLibre controls crisp and paper-matched without recoloring the map itself */
+.maplibregl-ctrl-group {
+  border: 1px solid #D8D3C8 !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08) !important;
+  border-radius: 6px !important;
+  overflow: hidden;
+}
+
+.maplibregl-ctrl-attrib {
+  font-size: 10px !important;
+  background-color: rgba(255, 255, 255, 0.88) !important;
+}
+
+/* Subtle paper-toned scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF8F4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D6D0C4;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B8B1A3;
+}

@@ -1,11 +1,29 @@
-<div align="center">
+# Trend Detective (Frontend)
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Web frontend for the NASA Earth System challenge *"Be An Earth System Trend Detective!"*. Click any coordinate on Earth to query ~45 years of NASA POWER (MERRA-2) monthly climate reanalysis and display significance-tested temperature and precipitation trends, change points, and co-movement statistics from the backend API.
 
-  <h1>Built with AI Studio</h2>
+## Development
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+```bash
+npm install
+npm run dev
+```
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+Create a `.env` file from `.env.example` and configure your backend URL:
 
-</div>
+```env
+VITE_API_BASE_URL=https://trend-detective-api.vercel.app
+VITE_USE_FIXTURES=false
+```
+
+## Production Build
+
+```bash
+npm run build
+```
+
+## Deploy on Vercel
+
+1. Push this repository to GitHub/GitLab and import it into Vercel (Vite preset, build command `npm run build`, output directory `dist`).
+2. Set `VITE_API_BASE_URL` in Vercel project settings to your deployed backend URL.
+3. Single-page app routing fallback is configured in `vercel.json`.

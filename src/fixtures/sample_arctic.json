@@ -1,0 +1,89 @@
+{
+  "location": { "lat": 78.20, "lon": 15.60 },
+  "grid": {
+    "approx_size_km": "50-60",
+    "note": "MERRA-2 grid cell average, not a point measurement",
+    "cell_lat": 78.00,
+    "cell_lon": 15.63
+  },
+  "cached": true,
+  "fetched_at": "2026-11-12T09:14:00Z",
+  "years": [
+    1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990,
+    1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000,
+    2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010,
+    2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020,
+    2021, 2022, 2023, 2024
+  ],
+  "temperature": {
+    "unit": "°C",
+    "values": [
+      -6.85, -6.92, -6.50, -6.78, -6.45, -7.10, -6.15, -6.20, -5.95, -6.30,
+      -6.10, -5.90, -5.80, -6.25, -5.70, -5.45, -5.30, -5.10, -4.85, -5.05,
+      -4.90, -4.75, -4.60, -4.50, -4.80, -3.95, -4.10, -4.35, -4.20, -3.85,
+      -3.70, -3.55, -3.80, -3.65, -3.40, -2.95, -3.10, -3.35, -3.20, -2.85,
+      -2.70, -2.90, -2.65, -2.45
+    ],
+    "n_years": 44,
+    "first_year": 1981,
+    "last_year": 2024,
+    "trend_direction": "increasing",
+    "p_raw": 0.0001,
+    "p_adj": 0.0005,
+    "sen_slope_per_year": 0.078,
+    "sen_slope_per_decade": 0.78,
+    "intercept": -6.82,
+    "confidence": "Strong",
+    "pettitt_year": 2005,
+    "pettitt_p_raw": 0.001,
+    "pettitt_p_adj": 0.004,
+    "change_point_significant": true,
+    "mean_before": -5.92,
+    "mean_after": -3.42
+  },
+  "precipitation": {
+    "unit": "mm/day",
+    "values": [
+      1.10, 1.15, 1.08, 1.22, 1.18, 1.05, 1.25, 1.20, 1.12, 1.30,
+      1.16, 1.24, 1.18, 1.22, 1.26, 1.28, 1.32, 1.35, 1.30, 1.28,
+      1.34, 1.36, 1.40, 1.35, 1.38, 1.45, 1.42, 1.39, 1.44, 1.48,
+      1.46, 1.50, 1.47, 1.52, 1.55, 1.58, 1.54, 1.56, 1.60, 1.62,
+      1.58, 1.65, 1.63, 1.66
+    ],
+    "n_years": 44,
+    "first_year": 1981,
+    "last_year": 2024,
+    "trend_direction": "increasing",
+    "p_raw": 0.002,
+    "p_adj": 0.008,
+    "sen_slope_per_year": 0.012,
+    "sen_slope_per_decade": 0.12,
+    "intercept": 1.12,
+    "confidence": "Strong",
+    "pettitt_year": 2004,
+    "pettitt_p_raw": 0.008,
+    "pettitt_p_adj": 0.024,
+    "change_point_significant": true,
+    "mean_before": 1.21,
+    "mean_after": 1.53
+  },
+  "correlation": {
+    "spearman_raw": 0.81,
+    "p_raw": 0.0001,
+    "spearman_detrended": 0.28,
+    "p_detrended_raw": 0.065,
+    "p_detrended_adj": 0.098
+  },
+  "summary": [
+    "Arctic Svalbard (78.20°N, 15.60°E) exhibits pronounced warming with annual temperatures rising at +0.78 °C per decade from 1981 to 2024 (strong confidence, adjusted p < 0.001).",
+    "A major level shift occurred around 2005 (mean before: -5.92 °C, mean after: -3.42 °C).",
+    "Annual mean precipitation also displays a statistically significant increasing trend (+0.12 mm/day per decade, adjusted p = 0.008).",
+    "After removing each series' own upward trend, detrended association between temperature and precipitation is weak (spearman r = 0.28, not statistically significant at adjusted p = 0.098)."
+  ],
+  "meta": {
+    "alpha": 0.05,
+    "fdr": "Benjamini-Hochberg over 5 tests",
+    "trend_test": "Mann-Kendall, Hamed-Rao modification",
+    "source": "NASA POWER (MERRA-2)"
+  }
+}
